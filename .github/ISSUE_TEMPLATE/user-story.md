@@ -12,12 +12,13 @@ assignees: ''
  **So that** [benefit]  
    
  ### Details and Assumptions
- * [document what you know]
+ * The user must provide a valid email address
+ * The system stores user credentials securely
    
  ### Acceptance Criteria  
    
  ```gherkin
- Given [some context]
- When [certain action is taken]
- Then [the outcome of action is observed]
+ Given a new user is on the registration page
+ When the user enters a valid email, username, and password and clicks "Register"
+ Then the system should create the account and redirect the user to the dashboard
  ```
